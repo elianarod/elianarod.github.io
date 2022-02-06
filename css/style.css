@@ -358,6 +358,7 @@ footer i {
   article {
     font-size: 20px;
     padding: 1em 2em 1em 2em;
+    mix-blend-mode: difference;
   }
 
   .details h2 {

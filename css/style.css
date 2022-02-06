@@ -345,6 +345,16 @@ footer i {
     z-index: 99;
     border: none;
   }
+  
+  /* .about:hover .cursor{
+    transform: translate(-50%, -50%) scale(40);
+    transition: transform 0.3s ease;
+  } */
+
+.about{
+  transform: translate3d(0, 0, 0);
+-webkit-transform: translate3d(0, 0, 0);
+}
 
   /* work */
   article {

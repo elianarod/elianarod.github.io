@@ -120,10 +120,6 @@ if ($(window).width() > 767) {
   }
 }
 
-gsap.to(".cursor", {
-  force3D: false,
-});
-
 // Random color on page load
 // array with colors
 let colors = ["#205CC2", "#038F36", "#EE6A0F", "#D1191A"];

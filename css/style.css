@@ -143,6 +143,11 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+  background-color: transparent;
+}
+
+body {
+  background-color: transparent;
 }
 
 em {
@@ -343,9 +348,12 @@ footer i {
     background-color: var(--cor);
     mix-blend-mode: difference;
     z-index: 99;
+  }
+
+  /* .about {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-  }
+  } */
 
   /* work */
   article {

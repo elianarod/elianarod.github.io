@@ -337,7 +337,7 @@ footer i {
   .cursor {
     pointer-events: none;
     position: fixed;
-    padding: 0.55vw;
+    padding: 22vw;
     border-radius: 50%;
     transition: transform 0.3s ease;
     background-color: var(--cor);
@@ -351,13 +351,10 @@ footer i {
     transition: transform 0.3s ease;
   } */
 
-  .about {
+  /* .about {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translateZ(0); /* IE 9 */
-    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
-    transform: translateZ(0);
-  }
+  } */
 
   /* work */
   article {

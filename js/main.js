@@ -42,26 +42,28 @@ $(function () {
       $(this).toggleClass("active");
       $(this).siblings(".dropdown").slideDown(1000);
 
-        // if click on any other details and not the one currently active hide current dropdown
-        $('.details').not(this).each(function(){
-            $(this).siblings(".dropdown").css('display', 'none');
-            $(this).removeClass("active");      
-            $("article").addClass("active");
-            $("footer").addClass("active");
+      // if click on any other details and not the one currently active hide current dropdown
+      $(".details")
+        .not(this)
+        .each(function () {
+          $(this).siblings(".dropdown").css("display", "none");
+          $(this).removeClass("active");
+          $("article").addClass("active");
+          $("footer").addClass("active");
         });
-        // if this isn't active
-        if (!$(this).hasClass("active")){
-          $(this).siblings(".dropdown").css('display', 'none');
-          $("article").removeClass("active");
-          $("footer").removeClass("active");
-        }
+      // if this isn't active
+      if (!$(this).hasClass("active")) {
+        $(this).siblings(".dropdown").css("display", "none");
+        $("article").removeClass("active");
+        $("footer").removeClass("active");
+      }
     });
 
     //if click on any other part of the document
     $(document).click(function (e) {
       let target = e.target;
       if (!$(target).is("article") && !$(target).parents().is("article")) {
-        $(".dropdown").css('display', 'none');
+        $(".dropdown").css("display", "none");
         $(".details").removeClass("active");
         $("article").removeClass("active");
         $("footer").removeClass("active");
@@ -78,7 +80,7 @@ if ($(window).width() > 767) {
     $(this).children("h2, p").css("text-decoration", "underline");
     $(this).children("h2, p").css("font-style", "italic");
     $(".cursor").css("transition", "transform 0.2s ease");
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(3)");
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.08)");
   }
 
   $(".details").on("mouseout", hoverProjOut);
@@ -86,7 +88,7 @@ if ($(window).width() > 767) {
   function hoverProjOut() {
     $(this).children("h2, p").css("text-decoration", "none");
     $(this).children("h2, p").css("font-style", "normal");
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(1)");
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.03)");
   }
 
   // Hover links e dropdowns
@@ -94,29 +96,33 @@ if ($(window).width() > 767) {
 
   function hoverLinks() {
     $(".cursor").css("transition", "transform 0.2s ease");
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(3)");
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.08)");
   }
 
   $("a").on("mouseout", hoverLinksOut);
 
   function hoverLinksOut() {
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.03)");
+  }
+
+  // Hover about
+  $(".hover-about").on("mouseover", hoverAbout);
+
+  function hoverAbout() {
+    $(".cursor").css("transition", "transform 0.3s ease");
     $(".cursor").css("transform", "translate(-50%, -50%) scale(1)");
   }
 
-    // Hover about
-    $(".hover-about").on("mouseover", hoverAbout);
+  $(".hover-about").on("mouseout", hoverAboutOut);
 
-    function hoverAbout(){
-      $(".cursor").css("transition", "transform 0.3s ease");
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(40)");
-    }
-
-    $(".hover-about").on("mouseout", hoverAboutOut);
-
-    function hoverAboutOut(){
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(1)");
-    }
+  function hoverAboutOut() {
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.03)");
+  }
 }
+
+gsap.to(".cursor", {
+  force3D: false,
+});
 
 // Random color on page load
 // array with colors
@@ -132,22 +138,20 @@ document.documentElement.style.setProperty("--cor", getColor());
 
 // Dropdown height
 if ($(window).width() > 767) {
+  let altura = $("#work").height() + $("#contacts").height();
 
-let altura = $('#work').height() + $('#contacts').height();
-
-$('.dropdown').css('height', `${altura + 25}`);
+  $(".dropdown").css("height", `${altura + 25}`);
 }
 
-// hide scroll msg on scroll up 
+// hide scroll msg on scroll up
 if ($(window).width() > 767) {
+  let targetOffset = $(".about").offset().top;
 
-let targetOffset = $(".about").offset().top;
-
-let $w = $(window).scroll(function(){
-    if ( $w.scrollTop() < targetOffset ) {   
-      $('#work i, #scroll').css('display', 'none');    
+  let $w = $(window).scroll(function () {
+    if ($w.scrollTop() < targetOffset) {
+      $("#work i, #scroll").css("display", "none");
     } else {
-      $('#work i, #scroll').css('display', 'block');    
+      $("#work i, #scroll").css("display", "block");
     }
-});
+  });
 }

@@ -343,7 +343,6 @@ footer i {
     background-color: var(--cor);
     mix-blend-mode: difference;
     z-index: 99;
-    border: none;
   }
 
   /* .about:hover .cursor{
@@ -351,10 +350,10 @@ footer i {
     transition: transform 0.3s ease;
   } */
 
-  /* .about {
+  .about {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-  } */
+  }
 
   /* work */
   article {

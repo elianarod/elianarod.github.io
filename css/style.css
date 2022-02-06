@@ -343,6 +343,7 @@ footer i {
     background-color: var(--cor);
     mix-blend-mode: difference;
     z-index: 99;
+    border: none;
   }
 
   /* work */

@@ -145,7 +145,7 @@ html {
   width: 100%;
 }
 
-em{
+em {
   font-style: italic;
 }
 
@@ -175,7 +175,7 @@ nav {
   justify-content: space-between;
   padding: 0.7em 1.5em 0.7em 1.5em;
   border-bottom: 1px var(--cor) solid;
-  font-family: "Hack-Regular", 'Courier New', Courier, monospace;
+  font-family: "Hack-Regular", "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -183,7 +183,7 @@ nav {
 /* texto de apresentação */
 .about {
   display: flex;
-  font-family: "Hack-Regular", 'Courier New', Courier, monospace;
+  font-family: "Hack-Regular", "Courier New", Courier, monospace;
   font-size: 22px;
   line-height: 27px;
   padding: 1.5em 24px 1.5em 24px;
@@ -267,7 +267,7 @@ img {
 
 /* contacts */
 footer {
-  font-family:"Hack-Regular", 'Courier New', Courier, monospace;
+  font-family: "Hack-Regular", "Courier New", Courier, monospace;
   color: var(--cor);
   display: flex;
   flex-direction: column;
@@ -345,16 +345,19 @@ footer i {
     z-index: 99;
     border: none;
   }
-  
+
   /* .about:hover .cursor{
     transform: translate(-50%, -50%) scale(40);
     transition: transform 0.3s ease;
   } */
 
-.about{
-  transform: translate3d(0, 0, 0);
--webkit-transform: translate3d(0, 0, 0);
-}
+  .about {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+  }
 
   /* work */
   article {
@@ -404,7 +407,7 @@ footer i {
   }
 
   #scroll {
-    font-family: "Hack-Regular", 'Courier New', Courier, monospace;
+    font-family: "Hack-Regular", "Courier New", Courier, monospace;
     transform: rotate(-90deg);
     display: block;
     position: fixed;

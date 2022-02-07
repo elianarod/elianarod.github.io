@@ -230,6 +230,7 @@ p {
 #collab {
   margin-top: 0.7em;
   font-style: italic;
+  font-size: 14px;
 }
 
 #year {
@@ -317,8 +318,12 @@ footer i {
   .about {
     font-size: 3.2vw;
     line-height: 3.8vw;
-    padding: 3em 10% 12% 24px;
+    padding: 3em 20% 18vh 24px;
     color: white;
+  }
+
+  span {
+    margin-left: 4em;
   }
 
   /* seta */
@@ -348,11 +353,6 @@ footer i {
   #isolate {
     isolation: isolate;
   }
-
-  /* .about {
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-  } */
 
   /* work */
   article {

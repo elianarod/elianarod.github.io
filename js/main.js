@@ -80,7 +80,7 @@ if ($(window).width() > 767) {
     $(this).children("h2, p").css("text-decoration", "underline");
     $(this).children("h2, p").css("font-style", "italic");
     $(".cursor").css("transition", "transform 0.2s ease");
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.08)");
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.06)");
   }
 
   $(".details").on("mouseout", hoverProjOut);
@@ -96,7 +96,7 @@ if ($(window).width() > 767) {
 
   function hoverLinks() {
     $(".cursor").css("transition", "transform 0.2s ease");
-    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.08)");
+    $(".cursor").css("transform", "translate(-50%, -50%) scale(0.06)");
   }
 
   $("a").on("mouseout", hoverLinksOut);
@@ -122,7 +122,7 @@ if ($(window).width() > 767) {
 
 // Random color on page load
 // array with colors
-let colors = ["#205CC2", "#038F36", "#EE6A0F", "#D1191A"];
+let colors = ["#2243F0", "#038F36", "#EE6A0F", "#D1191A"];
 
 // get random color from array
 function getColor() {

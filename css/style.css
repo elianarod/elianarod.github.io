@@ -126,8 +126,8 @@ table {
 
 /* importar fontes */
 @font-face {
-  font-family: "Hack-Regular";
-  src: url("../fonts/Hack-Regular.ttf");
+  font-family: "MonospaceTypewriter";
+  src: url("../fonts/MonospaceTypewriter.ttf");
 }
 
 /* cor global */
@@ -175,7 +175,7 @@ nav {
   justify-content: space-between;
   padding: 0.7em 1.5em 0.7em 1.5em;
   border-bottom: 1px var(--cor) solid;
-  font-family: "Hack-Regular", "Courier New", Courier, monospace;
+  font-family: "MonospaceTypewriter", "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -183,7 +183,7 @@ nav {
 /* texto de apresentação */
 .about {
   display: flex;
-  font-family: "Hack-Regular", "Courier New", Courier, monospace;
+  font-family: "Noto Serif JP", "Times New Roman", Times, serif;
   font-size: 22px;
   line-height: 27px;
   padding: 1.5em 24px 1.5em 24px;
@@ -199,7 +199,7 @@ nav {
 article {
   border-bottom: 1px var(--cor) solid;
   color: var(--cor);
-  font-family: "Noto Serif JP", Georgia, "Times New Roman", Times, serif;
+  font-family: "MonospaceTypewriter", "Courier New", Courier, monospace;
   font-size: 16px;
   padding: 1em 2em 1em 2em;
 }
@@ -268,7 +268,7 @@ img {
 
 /* contacts */
 footer {
-  font-family: "Hack-Regular", "Courier New", Courier, monospace;
+  font-family: "Noto Serif JP", "Times New Roman", Times, serif;
   color: var(--cor);
   display: flex;
   flex-direction: column;
@@ -402,7 +402,7 @@ footer i {
   }
 
   #scroll {
-    font-family: "Hack-Regular", "Courier New", Courier, monospace;
+    font-family: "MonospaceTypewriter", "Courier New", Courier, monospace;
     transform: rotate(-90deg);
     display: block;
     position: fixed;

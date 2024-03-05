@@ -1,0 +1,530 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* cor global */
+:root {
+  --cor: black;
+}
+
+/* geral */
+@font-face {
+  font-family: "AuthenticSans";
+  src: url("/fonts/AUTHENTICSans-60.otf");
+}
+
+.material-symbols-outlined {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6vw; /* Preferred icon size */
+  display: inline-block;
+  line-height: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+html {
+  cursor: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  color: var(--cor);
+  font-family: "AuthenticSans", Arial, Helvetica, sans-serif;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  cursor: none;
+  color: var(--cor);
+}
+
+a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* nav */
+nav {
+  padding: 0.5em 1em 0 1em;
+  font-size: 3.5vw;
+}
+
+/* texto de apresentação */
+.about {
+  display: flex;
+  font-size: 3.5vw;
+  padding: 1em;
+  line-height: 1.2em;
+}
+
+/* seta */
+.arrow {
+  display: none;
+}
+
+/* work */
+article {
+  border-top: 0.5px var(--cor) solid;
+  font-size: 3.5vw;
+  padding: 0.5em 1em;
+}
+
+#description {
+  margin-top: 0.5em;
+}
+
+#description-2 {
+  margin: 0.5em 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2em;
+}
+
+.details.active {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.details h2,
+p {
+  flex: 1;
+}
+
+.details h2 {
+  flex-grow: 1.8;
+}
+
+.details p {
+  margin-left: 0.5em;
+}
+
+#collab {
+  margin-top: 0.5em;
+  font-size: 3.5vw;
+}
+
+#year {
+  text-align: right;
+  flex-grow: 0.5;
+}
+
+.dropdown {
+  display: none;
+  height: 60vh;
+  overflow: scroll;
+  margin-top: 0.5em;
+  line-height: 1.2em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin-top: 0.1em;
+
+  position: relative;
+  z-index: 1;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+#work i {
+  display: none;
+}
+
+#scroll {
+  display: none;
+}
+
+/* contacts */
+footer {
+  border-top: 0.5px var(--cor) solid;
+  z-index: 99;
+}
+
+.footer-col {
+  display: flex;
+  background-color: white;
+  z-index: 99;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+footer p {
+  font-size: 3.5vw;
+  line-height: 1.2em;
+}
+
+footer i {
+  position: relative;
+  top: 0.3em;
+}
+
+/* MEDIA QUERIES */
+/* desktop */
+@media only screen and (min-width: 768px) {
+  /* nav */
+  nav {
+    font-size: 0.85vw;
+  }
+
+  body {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  /* texto de apresentação */
+  header {
+    height: 61.8vh;
+  }
+
+  main {
+    margin: 0 1em;
+  }
+
+  .about {
+    font-size: 2.3vw;
+    line-height: 1.2em;
+    padding: 2em 50% 1em 0.5em;
+    color: white;
+  }
+
+  span {
+    margin-left: 4em;
+  }
+
+  /* seta */
+  .arrow {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
+
+  .arrow i {
+    font-size: 0.85vw;
+  }
+
+  /* interação hover cursor c/texto apresentação */
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 12vw;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    background-color: var(--cor);
+    mix-blend-mode: difference;
+    z-index: 999;
+  }
+
+  #isolate {
+    isolation: isolate;
+  }
+
+  /* work */
+  .work-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  article {
+    font-size: 0.85vw;
+    padding: 0.5em 0;
+  }
+
+  #collab {
+    margin-top: 0.5em;
+    font-size: 0.85vw;
+  }
+
+  .details h2 {
+    margin-bottom: 0;
+  }
+
+  article.active {
+    width: 47.4vw;
+  }
+
+  .details {
+    width: 47.4vw;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 0.85vw;
+    line-height: 1.3em;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin-right: 1em;
+    margin-left: 0.5em;
+    margin-top: 0;
+    position: fixed;
+  }
+
+  .dropdown::-webkit-scrollbar {
+    display: none;
+  }
+
+  #work i {
+    display: inline-block;
+    position: relative;
+    top: 0.3em;
+    font-size: 1.1vw;
+  }
+
+  #description {
+    margin-top: 0.5em;
+    font-size: 0.85vw;
+  }
+
+  #description-2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.85vw;
+  }
+
+  #scroll {
+    transform: rotate(-90deg);
+    display: block;
+    position: fixed;
+    bottom: 3.8em;
+    font-size: 0.85vw;
+    padding-bottom: 2.7em;
+  }
+
+  /* contacts */
+  footer {
+    padding: 0.5em 0;
+    margin: 0 1em;
+  }
+  /* 
+  footer div {
+    flex: 1;
+  } */
+
+  footer p {
+    font-size: 0.85vw;
+  }
+
+  .material-symbols-outlined {
+    font-size: 1.1vw; /* Preferred icon size */
+  }
+
+  #behance,
+  #insta {
+    top: 0;
+  }
+
+  footer.active {
+    width: 47.7vw;
+  }
+
+  .footer-col {
+    position: relative;
+    padding: 0;
+    width: 47.7vw;
+    flex-direction: row;
+    bottom: 0;
+    background-color: transparent;
+  }
+
+  .col-1 {
+    margin-right: 0.2em;
+  }
+
+  .col-2 {
+    margin-right: 0.2em;
+  }
+}
+
+/* large devices */
+@media only screen and (min-width: 1600px) {
+  #work i {
+    font-size: 0.9vw;
+  }
+
+  #description {
+    font-size: 0.6vw;
+  }
+
+  #description-2 {
+    font-size: 0.6vw;
+  }
+
+  .dropdown {
+    font-size: 0.6vw;
+  }
+
+  article {
+    font-size: 0.6vw;
+  }
+
+  footer p {
+    font-size: 0.6vw;
+  }
+
+  #collab {
+    font-size: 0.6vw;
+  }
+
+  .about {
+    font-size: 1.9vw;
+  }
+
+  nav {
+    font-size: 0.6vw;
+  }
+
+  .material-symbols-outlined {
+    font-size: 0.9vw; /* Preferred icon size */
+  }
+}

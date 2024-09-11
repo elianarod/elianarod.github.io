@@ -131,8 +131,13 @@ table {
 
 /* geral */
 @font-face {
-  font-family: "AuthenticSans";
-  src: url("/fonts/AUTHENTICSans-60.otf");
+  font-family: "Inter-SemiBold";
+  src: url("/fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("/fonts/Inter-Regular.ttf");
 }
 
 .material-symbols-outlined {
@@ -155,7 +160,7 @@ html {
   height: 100%;
   width: 100%;
   color: var(--cor);
-  font-family: "AuthenticSans", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
 }
 
 em {
@@ -188,7 +193,8 @@ nav {
   display: flex;
   font-size: 3.5vw;
   padding: 1em;
-  line-height: 1.2em;
+  line-height: 1em;
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
 }
 
 /* seta */
@@ -299,7 +305,7 @@ footer p {
 
 footer i {
   position: relative;
-  top: 0.3em;
+  top: 0.2em;
 }
 
 /* MEDIA QUERIES */
@@ -325,9 +331,9 @@ footer i {
   }
 
   .about {
-    font-size: 2.3vw;
-    line-height: 1.2em;
-    padding: 2em 50% 1em 0.5em;
+    font-size: 2vw;
+    line-height: 1.15em;
+    padding: 1.5em 50% 1em 0.5em;
     color: white;
   }
 
@@ -372,7 +378,7 @@ footer i {
 
   article {
     font-size: 0.85vw;
-    padding: 0.5em 0;
+    padding: 0.4em 0;
   }
 
   #collab {
@@ -417,7 +423,7 @@ footer i {
   #work i {
     display: inline-block;
     position: relative;
-    top: 0.3em;
+    top: 0.25em;
     font-size: 1.1vw;
   }
 
@@ -517,7 +523,7 @@ footer i {
   }
 
   .about {
-    font-size: 1.9vw;
+    font-size: 1.7vw;
   }
 
   nav {

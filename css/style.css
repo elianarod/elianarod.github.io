@@ -194,7 +194,7 @@ nav {
   font-size: 3.5vw;
   padding: 1em;
   line-height: 1em;
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
 }
 
 /* seta */
@@ -335,6 +335,7 @@ footer i {
     line-height: 1.15em;
     padding: 1.5em 50% 1em 0.5em;
     color: white;
+    font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   }
 
   span {

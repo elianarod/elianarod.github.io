@@ -197,6 +197,10 @@ nav {
   font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
 }
 
+.about a {
+  color: white;
+}
+
 /* seta */
 .arrow {
   display: none;
